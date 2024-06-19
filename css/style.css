@@ -1,51 +1,125 @@
-body{
-    font-family: monospace;
+*,
+html{
+    margin: 0;
+    padding: 0;
 }
 
-.subject-info{
+body {
+    font-family: monospace;
+    /* background-image: url("../assets/sunsed.jpg");
+    background-repeat: no-repeat; */
+    background-color: #333;
+    /* background-size: 230vh 100vh; */
+    color:lemonchiffon;
+}
+
+.navbar-container{
+    background-color: #555;
+    padding: 10px;
+    text-align: center;
+}
+
+.info {
+    padding: 10px;
+    margin: 10px;
+}
+
+textarea{
+    font-size: px;
+}
+
+.subject-info {
+    
     font-size: 24px;
     font-style: italic;
     font-family: math;
 }
 
-.celcius-container{
-    text-align:center;
+.celcius-container {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
 }
 
-.resoult-container{
+.Celcius-info{
+    padding-right: 75vh;
+}
+
+.formula-info{
+    padding: 10px;
+    margin: 10px;
+}
+
+.resoult-container {
     display: flex;
     justify-content: space-evenly;
 }
 
-textarea{
-    resize: none;
-    background-color: gainsboro;
-    border-radius: 4px;
-    border: 2px solid;
-    font-family: math;
-    font-size: 25px;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-.green-color{
+input {
+    resize: none;
+    padding: 10px;
+    background-color: gainsboro;
+    border-radius: 4px;
+    padding: 10px;
+    border: 2px solid;
+    font-family: math;
+    width: 500px;
+    height: 50px;
+    font-size: 15px;
+    list-style-type: none;
+}
+
+.green-color {
+    
     background-color: lawngreen;
     border: none;
     border-radius: 4px;
+    height: 20px;
+    width: 70px;
     font-size: 15px;
     color: black;
 }
 
-.red-color{
+.green-color:hover{
+    border: 1px solid black;
+    transition: .5s ease-in-out;
+    /* transition-delay: .3s; */
+}
+
+.red-color {
     background-color: red;
     border: none;
+    height: 20px;
+    width: 70px;
     border-radius: 4px;
     font-size: 15px;
     color: white;
 }
 
-.blue-color{
+.red-color:hover{
+    border: 1px solid black;
+    transition: .5s ease-in-out;
+    /* transition-delay: .3s; */
+}
+
+.blue-color {
     background-color: blue;
     border: none;
+    height: 20px;
+    width: 70px;
     border-radius: 4px;
     font-size: 15px;
     color: white;
+}
+
+.blue-color:hover{
+    border: 1px solid black;
+    transition: .5s ease-in-out;
+    /* transition-delay: .3s; */
 }

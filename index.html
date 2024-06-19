@@ -9,29 +9,32 @@
 
 <body>
 
-    <header>
+    <header class="navbar-container">
         <h1>Website Konversi Suhu</h1>
     </header>
-
+    <br>
     <main>
-        <p>Masukkan suhu derajat Celcius (&deg;C) ....</p>
+        <h2 class="info">Masukkan suhu derajat Celcius (&deg;C) ....</h2>
         <!-- BAGIAN CELCIUS -->
+   
         <section class="celcius-container">
 
-            <header>
-                <h3>Celcius (&deg;C) :</h3>
+            <header class="Celcius-info">
+                <h3 id = "case1">Celcius (&deg;C) :</h3>
+                <h3 id="case2">Fahrenheit (&deg;F) :</h3>
             </header>
 
             <section>
-                <textarea></textarea>
+                <input placeholder="Celcius(&deg;c) "id="celciusValue" type="number" />
             </section>
 
             <section>
-                <button class="green-color">konversi</button>
-                <button class="red-color">reset</button>
-                <button class="blue-color">reverse</button>
+                <button class="green-color" id="konversiButton" onclick="convertion(false)">konversi</button>
+                <button class="red-color" id="resetButton" onclick="clearForm()" >reset</button>
+                <button class="blue-color" id="reverseButton" onclick="convertion(true)">reverse</button>
             </section>
 
+                <!-- <img src="assets/sunset-silhouettes-trees-mountains-generative-ai_169016-29371.avif"> -->
 
         </section>
 
@@ -39,11 +42,12 @@
         <section class="resoult-container">
             <section>
                 <header>
-                    <h3>Fahrenheit (&deg;F) :</h3>
+                    <h3 id = "case3">Celcius (&deg;C) :</h3>
+                    <h3 id="case4">Fahrenheit (&deg;F) :</h3>
                 </header>
 
                 <section>
-                    <textarea></textarea>
+                    <input id="fahrenheitValue"  readonly/>
                 </section>
 
             </section>
@@ -55,15 +59,15 @@
                 </header>
 
                 <section>
-                    <textarea></textarea>
+                    <input id="rumus" readonly/>
                 </section>
             </section>
         </section>
-        
+        <br>
         <hr>
         
         <!-- BAGIAN FORMULA -->
-        <section>
+        <section class="formula-info">
             <header>
                 <h1>Cara konversi dari Celcius (&deg;C) ke Fahrenheit (&deg;F)</h1>
             </header>
