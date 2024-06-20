@@ -9,16 +9,19 @@ body {
     background-image: url("../assets/sunsed.jpg");
     background-repeat: no-repeat;
     /* background-color: #333; */
-    background-size: 250vh 150vh;
+    background-size: 250vh 151vh;
     background-position: center;
-
+    margin: 0;
+    padding: 0;
     color:lemonchiffon;
+    border: none;
 }
 
 
 
 .header{
-    margin-top: 10px;
+    margin:0;
+    padding: 0;
     display: flex;
     justify-content: center;
 }
