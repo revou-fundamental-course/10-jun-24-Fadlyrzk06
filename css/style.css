@@ -9,7 +9,7 @@ body {
     background-image: url("../assets/sunsed.jpg");
     background-repeat: no-repeat;
     /* background-color: #333; */
-    background-size: cover;
+    background-size: 250vh 150vh;
     background-position: center;
 
     color:lemonchiffon;
