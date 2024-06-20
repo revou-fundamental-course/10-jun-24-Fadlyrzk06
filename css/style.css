@@ -6,21 +6,39 @@ html{
 
 body {
     font-family: monospace;
-    /* background-image: url("../assets/sunsed.jpg");
-    background-repeat: no-repeat; */
-    background-color: #333;
-    /* background-size: 230vh 100vh; */
+    background-image: url("../assets/sunsed.jpg");
+    background-repeat: no-repeat;
+    /* background-color: #333; */
+    background-size: cover;
+    background-position: center;
+
     color:lemonchiffon;
 }
 
-.navbar-container{
-    background-color: #555;
-    padding: 10px;
-    text-align: center;
-    width: 100%;
+
+
+.header{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
 }
 
+.container-content {
+    background-color: rgba(64, 64, 64,0.8);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 0px 4px 10px 4px rgba(64, 64, 64,0.8);
+}
+
+/* .position-content {
+    position: relative;
+} */
+
 .info {
+    /* position: absolute;
+      top: 5px;
+      left: 20px; */
     padding: 10px;
     margin: 10px;
 }
@@ -37,23 +55,51 @@ textarea{
 }
 
 .celcius-container {
-    text-align: center;
     padding: 10px;
     margin: 10px;
 }
 
 .Celcius-info{
-    padding-right: 75vh;
+
 }
 
-.formula-info{
+
+/* .resoult-container {
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    } */
+    
+    .Fahrenheit-container{
+    /* position: absolute;
+    top: 210px;
+    left: 40px; */ 
     padding: 10px;
     margin: 10px;
 }
 
-.resoult-container {
-    display: flex;
-    justify-content: space-evenly;
+.rumus-container {
+    /* position: absolute;
+    top: 350px;
+    left: 40px; */
+    padding: 10px;
+    margin: 10px;
+}
+
+.formula-container {
+    /* position: absolute;
+    top: 450px;
+    left: 20px; */
+    padding: 10px;
+    margin: 10px;
+}
+
+.formula-info{
+    /* font-size: 20px;
+    padding: 10px;
+    margin: 10px; */
+    padding: 10px;
+    margin: 10px;
 }
 
 input::-webkit-outer-spin-button,
@@ -66,18 +112,17 @@ input {
     resize: none;
     padding: 10px;
     background-color: gainsboro;
-    border-radius: 4px;
-    padding: 10px;
+    border-radius: 10px;
     border: 2px solid;
     font-family: math;
-    width: 500px;
+    width: 300px;
     height: 50px;
     font-size: 15px;
     list-style-type: none;
 }
 
 .green-color {
-    
+    margin: 10px;
     background-color: lawngreen;
     border: none;
     border-radius: 4px;
@@ -94,6 +139,8 @@ input {
 }
 
 .red-color {
+    margin: 10px;
+
     background-color: red;
     border: none;
     height: 20px;
@@ -110,6 +157,7 @@ input {
 }
 
 .blue-color {
+    margin: 10px;
     background-color: blue;
     border: none;
     height: 20px;

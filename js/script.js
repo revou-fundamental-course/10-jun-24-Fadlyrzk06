@@ -8,8 +8,13 @@
  let case3 = document.getElementById('case3');
  let case4 = document.getElementById('case4');
 
+ let infoRumus1 = document.getElementById('infoRumus1');
+ let infoRumus2 = document.getElementById('infoRumus2');
+
  case2.style.display='none';
  case3.style.display='none';
+ 
+ infoRumus2.style.display='none';
 
 
  function convertion(reverse){
@@ -24,18 +29,18 @@
         celcius = (fahrenheit - 32) * 5 / 9;
         rumuss = fahrenheit + '°F = (' + fahrenheit + '-32 * 5/9 = ' +  celcius.toFixed(1) + ')°C';
         celciusValue.value = celcius % 1 === 0 ? celcius.toFixed(0) : celcius.toFixed(1);
-        case1.style.display='none';
-        case2.style.display='block';
-        case3.style.display='block';
-        case4.style.display='none';
+        infoRumus1.style.display='none';
+        infoRumus2.style.display='block';
+        // case3.style.display='block';
+        // case4.style.display='none';
     } else if (!reverse && !isNaN(celcius)) {
         fahrenheit = (celcius * 9 / 5) + 32 ;
         rumuss = celcius + '°C = ('+ celcius + ' * 9/5) + 32 = ' + fahrenheit.toFixed(1)+ '°F';
         fahrenheitValue.value = fahrenheit % 1 === 0 ? fahrenheit.toFixed(0) : fahrenheit.toFixed(1);
-        case1.style.display='block';
-        case2.style.display='none';
-        case3.style.display='none';
-        case4.style.display='block';
+        infoRumus1.style.display='block';
+        infoRumus2.style.display='none';
+        // case3.style.display='none';
+        // case4.style.display='block';
     }
     rumus.value = rumuss;
 }

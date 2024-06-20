@@ -8,80 +8,96 @@
 </head>
 
 <body>
-
-    <header class="navbar-container">
+    <header class="header">
         <h1>Website Konversi Suhu</h1>
     </header>
     <br>
-    <main>
-        <h2 class="info">Masukkan suhu derajat Celcius (&deg;C) ....</h2>
-        <!-- BAGIAN CELCIUS -->
-   
-        <section class="celcius-container">
+    <main class="container-content">
+        <section >
+            
+            <h2 class="info">Masukkan suhu derajat Celcius (&deg;C) ....</h2>
+            <!-- BAGIAN CELCIUS -->
 
-            <header class="Celcius-info">
-                <h3 id = "case1">Celcius (&deg;C) :</h3>
-                <h3 id="case2">Fahrenheit (&deg;F) :</h3>
-            </header>
+            <section class="celcius-container">
 
-            <section>
-                <input placeholder="Celcius(&deg;c) "id="celciusValue" type="number" />
-            </section>
+                <header class="Celcius-info">
+                    <h3 id="case1">Celcius (&deg;C) :</h3>
+                    <h3 id="case2">Fahrenheit (&deg;F) :</h3>
+                </header>
 
-            <section>
-                <button class="green-color" id="konversiButton" onclick="convertion(false)">konversi</button>
-                <button class="red-color" id="resetButton" onclick="clearForm()" >reset</button>
-                <button class="blue-color" id="reverseButton" onclick="convertion(true)">reverse</button>
-            </section>
+                <section>
+                    <input placeholder="Celcius(&deg;c) " id="celciusValue" type="number" />
+                </section>
+
+                <section>
+                    <button class="green-color" id="konversiButton" onclick="convertion(false)">konversi</button>
+
+                </section>
 
                 <!-- <img src="assets/sunset-silhouettes-trees-mountains-generative-ai_169016-29371.avif"> -->
 
-        </section>
-
-        <!-- BAGIAN FAHRENHEIT -->
-        <section class="resoult-container">
-            <section>
-                <header>
-                    <h3 id = "case3">Celcius (&deg;C) :</h3>
-                    <h3 id="case4">Fahrenheit (&deg;F) :</h3>
-                </header>
-
-                <section>
-                    <input id="fahrenheitValue"  readonly/>
-                </section>
-
             </section>
 
-            <!-- BAGIAN PERHITUNGAN -->
-            <section>
-                <header>
-                    <h3>Convertion Calculate :</h3>
-                </header>
+            <!-- BAGIAN FAHRENHEIT -->
+            <section class="resoult-container">
+                <section class="Fahrenheit-container">
+                    <header>
+                        <h3 id="case3">Celcius (&deg;C) :</h3>
+                        <h3 id="case4">Fahrenheit (&deg;F) :</h3>
+                    </header>
 
-                <section>
-                    <input id="rumus" readonly/>
+                    <section>
+                        <input id="fahrenheitValue" type="number" />
+                    </section>
+                    <button class="red-color" id="resetButton" onclick="clearForm()">reset</button>
+                    <button class="blue-color" id="reverseButton" onclick="convertion(true)">reverse</button>
+
+                </section>
+
+                <!-- BAGIAN PERHITUNGAN -->
+                <section class="rumus-container">
+                    <header>
+                        <h3>Rumus :</h3>
+                    </header>
+
+                    <section>
+                        <input id="rumus" readonly />
+                    </section>
+                </section>
+            </section>
+            <section class="formula-container">
+                <br>
+                <hr>
+
+                <!-- BAGIAN FORMULA -->
+                <section class="formula-info" id="infoRumus1">
+                    <header>
+                        <h1>Cara konversi dari Celcius (&deg;C) ke Fahrenheit (&deg;F)</h1>
+                    </header>
+
+
+                    <p>Suhu <span class="subject-info">S</span> dalam derajat Fahrenheit ()&deg;F sama dengan suhu <span
+                            class="subject-info">S</span> dalam derajat Celcius (&deg;C) kali 9/5 tambah 32</p>
+                    <br>
+                    <p>
+
+                        <span class="subject-info">S</span><sub>(&deg;F)</sub> = (<span
+                            class="subject-info">S</span><sub>(&deg;C)</sub> x 9 / 5) + 32
+                    </p>
+                    <br>
+                    <p>atau</p>
+                    <br>
+                    <span class="subject-info">S</span><sub>(&deg;F)</sub> = (<span
+                            class="subject-info">S</span><sub>(&deg;C)</sub> x 1.8) + 32
+
+                </section>
+                <section class="formula-info" id="infoRumus2">
+                    <h1>Cara Konversi Dari Fahrenheit (&deg;F) ke Celcius (&deg;C)</h1>
+                    <p>Suhu <span class="subject-info">S</span> dalam derajat Celcius (&deg;C) sama dengan suhu <span class="subject-info">S</span> dalam derajat Fahrenheit (&deg;F) kurang 32 dibagi 1.8 </p>
+                    <p><span class="subject-info">S</span><sub>(&deg;C)</sub> = (<span class="subject-info">S</span><sub>(&deg;F)</sub> - 32) / 1.8 </p>
                 </section>
             </section>
         </section>
-        <br>
-        <hr>
-        
-        <!-- BAGIAN FORMULA -->
-        <section class="formula-info">
-            <header>
-                <h1>Cara konversi dari Celcius (&deg;C) ke Fahrenheit (&deg;F)</h1>
-            </header>
-
-
-            <p>Suhu <span class="subject-info">S</span> dalam derajat Fahrenheit ()&deg;F sama dengan suhu <span
-                    class="subject-info">S</span> dalam derajat Celcius (&deg;C) </p>
-
-            <p>
-                <span class="subject-info">S</span><sub>(&deg;F)</sub>=(<span
-                    class="subject-info">S</span><sub>(&deg;C)</sub>x9/5)+32
-            </p>
-        </section>
-
     </main>
 
     <footer>
